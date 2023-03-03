@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "name": "Best Pomodoro",
+  "version": "1.0.0",
+  "description": "My first Chrome Extension",
+  "icons": {
+    "16": "logo.png",
+    "48": "logo.png",
+    "128": "logo.png"
+  },
+  "action": {
+    "default_icon": {
+      "16": "logo.png",
+      "24": "logo.png",
+      "32": "logo.png"
+    },
+    "default_title": " Pomodoro Timer Action Title",
+    "default_popup": "popup.html"
+  },
+  "options_page": "options.html",
+  "permissions": ["storage", "alarms", "notifications"],
+  "background": {
+    "service_worker": "background.js"
+  }
+}
